@@ -1,0 +1,47 @@
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #efefef;
+    padding: 20px;
+}
+
+.form-box {
+    text-align: center;
+}
+
+input {
+    padding: 8px 10px;
+    margin: 10px;
+}
+
+.sub-btn {
+    padding: 8px 10px;
+    background-color: red;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.social-box {
+    text-align: center;
+}
+
+.social-link {
+	font-size: 2em;
+    margin-right: 15px;
+}
+
+@media only screen and (max-width: 675px) {
+    footer {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    form {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+}

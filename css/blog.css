@@ -1,0 +1,138 @@
+.blog {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 100px;
+}
+
+.blog-text {
+    padding: 30px;
+    width: 70%;
+}
+
+.news-wrapper {
+    background-color: #fff;
+}
+
+.old-news {
+    position: absolute;
+    right: 10px;
+    background-color: #efefef;
+    width: 30%;
+    text-align: center;
+}
+
+.old-news__box {
+    padding: 5px;
+    margin: 30px;
+    border-radius: 2px;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.old-news__box:nth-child(1) {
+    background-image: url('../img/js.png');
+}
+
+.old-news__box:nth-child(2) {
+    background-image: url('../img/py.png');
+}
+
+.old-news__box:nth-child(3) {
+    background-image: url('../img/nodejs.png');
+}
+
+.blog-title {
+    text-align: center;
+}
+
+blockquote {
+    font-style: italic;
+    line-height: 1.5;
+    padding: 10px 30px;
+}
+
+blockquote:first-letter {
+    font-size: 3em;
+}
+
+figure {
+    text-align: center;
+    font-style: italic;
+}
+
+
+/*Author styles*/
+.author {
+    display: flex;
+    text-align: center;
+    background-color: #444;
+    margin: 30px 0;
+    padding: 20px;
+}
+
+.author-box {
+    width: 30%;
+    margin-right: 20px;
+}
+
+.author-img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.author-info {
+    width: 70%;
+    text-align: left;
+    color: #fff;
+}
+
+.author-span {
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 920px) {
+    .blog {
+        flex-direction: column;
+        padding: 100px 10px;
+    }
+    .old-news {
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .blog-text {
+        padding: 0px;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .old-news {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .author {
+        display: flex;
+        flex-direction: column;
+    }
+    .author-box {
+        width: 100%;
+    }
+    .author-img {
+        max-width: 100%;
+        border-radius: 10px;
+    }
+    .author-info {
+        width: 100%;
+    }
+}
